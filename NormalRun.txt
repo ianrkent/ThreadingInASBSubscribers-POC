@@ -1,0 +1,115 @@
+// Output from processing 100 odd messages, when creating 1 subscriber on main thread with MaxConcurrentCalls = 3 
+
+Microsoft.WindowsAzure.ServiceRuntime Information: 100 : Role environment . INITIALIZING
+Microsoft.WindowsAzure.ServiceRuntime Information: 100 : Role environment . INITIALED RETURNED. HResult=0
+Microsoft.WindowsAzure.ServiceRuntime Information: 101 : Role environment . INITIALIZED
+Microsoft.WindowsAzure.ServiceRuntime Information: 200 : Role entrypoint . CALLING   OnStart(): ASBSubscriber.Worker.WorkerRole
+WaWorkerHost.exe Information: 0 : Thread 5: ASBSubscriber.Worker has been started
+Microsoft.WindowsAzure.ServiceRuntime Information: 202 : Role entrypoint . COMPLETED OnStart(): ASBSubscriber.Worker.WorkerRole
+The thread 0x643c has exited with code 0 (0x0).
+Microsoft.WindowsAzure.ServiceRuntime Information: 203 : Role entrypoint . CALLING   Run(): ASBSubscriber.Worker.WorkerRole
+WaWorkerHost.exe Information: 0 : Thread 6: ASBSubscriber.Worker is running
+WaWorkerHost.exe Information: 0 : Thread 6: Finished setting up subscription
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 0
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 1
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 500 : Role instance status check starting
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 502 : Role instance status check succeeded: Ready
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 2
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 3
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 4
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 5
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 6
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 7
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 8
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 9
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 10
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 11
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 12
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 13
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 14
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 15
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 16
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 17
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 18
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 19
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 20
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 21
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 22
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 23
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 24
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 25
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 26
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 27
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 28
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 29
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 30
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 31
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 32
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 33
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 34
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 35
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 36
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 37
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 38
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 39
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 40
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 41
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 42
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 43
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 44
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 45
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 46
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 47
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 48
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 49
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 50
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 51
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 52
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 53
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 54
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 55
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 56
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 57
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 58
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 59
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 60
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 61
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 62
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 63
+WaWorkerHost.exe Information: 0 : Thread 29: Processing message with Id 64
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 65
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 66
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 67
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 68
+WaWorkerHost.exe Information: 0 : Thread 29: Processing message with Id 69
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 70
+WaWorkerHost.exe Information: 0 : Thread 29: Processing message with Id 71
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 72
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 73
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 74
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 75
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 76
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 77
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 78
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 79
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 80
+WaWorkerHost.exe Information: 0 : Thread 28: Processing message with Id 81
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 82
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 83
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 84
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 85
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 86
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 87
+WaWorkerHost.exe Information: 0 : Thread 29: Processing message with Id 88
+WaWorkerHost.exe Information: 0 : Thread 29: Processing message with Id 89
+WaWorkerHost.exe Information: 0 : Thread 19: Processing message with Id 90
+WaWorkerHost.exe Information: 0 : Thread 29: Processing message with Id 91
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 92
+WaWorkerHost.exe Information: 0 : Thread 27: Processing message with Id 93
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 94
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 95
+WaWorkerHost.exe Information: 0 : Thread 17: Processing message with Id 96
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 97
+WaWorkerHost.exe Information: 0 : Thread 25: Processing message with Id 98
+WaWorkerHost.exe Information: 0 : Thread 24: Processing message with Id 99
+
