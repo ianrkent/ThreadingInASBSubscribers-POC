@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CreateSubscriptionOnThreadOption.cs" />
+    <Compile Include="Instrumentor\Instrumentor.cs" />
     <Compile Include="Subscribers\MessageSubscriber.cs" />
     <Compile Include="Subscribers\MessageSubscriberBase.cs" />
     <Compile Include="Log.cs" />

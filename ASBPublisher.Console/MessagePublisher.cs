@@ -22,8 +22,8 @@ namespace ASBPublisher
         {
             var topicDescription = new TopicDescription(TopicName)
             {
-                MaxSizeInMegabytes = 5120,
-                DefaultMessageTimeToLive = new TimeSpan(0, 1, 0)
+                MaxSizeInMegabytes = 5120
+                //DefaultMessageTimeToLive = new TimeSpan(1, 0, 0)
             };
 
             var namespaceManager = NamespaceManager.CreateFromConnectionString(ServiceBusConnectionString);

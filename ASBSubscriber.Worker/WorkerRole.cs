@@ -1,15 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Threading;
-using System.Threading.Tasks;
 using ASBSubscriber.Worker.Subscribers;
-using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
-using Microsoft.WindowsAzure.Storage;
 
 namespace ASBSubscriber.Worker
 {
@@ -22,7 +14,8 @@ namespace ASBSubscriber.Worker
         {
             Log.Info("ASBSubscriber.Worker is running");
 
-            new MessageSubscriber().StartSubscribing(3, cancellationTokenSource.Token);
+            // new MessageSubscriber().StartSubscribingWithAsyncHandler(1, cancellationTokenSource.Token);
+            new MessageSubscriber().StartSubscribing(1, cancellationTokenSource.Token);
 
             Log.Info("Finished setting up subscription");
 
@@ -43,7 +36,7 @@ namespace ASBSubscriber.Worker
         {
             Log.Info("ASBSubscriber.Worker is stopping");
 
-            this.cancellationTokenSource.Cancel();
+            cancellationTokenSource.Cancel();
 
             base.OnStop();
 

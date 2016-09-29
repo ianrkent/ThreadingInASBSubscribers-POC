@@ -1,10 +1,9 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using ASBSubscriber.Worker.Subscribers;
 using Microsoft.ServiceBus.Messaging;
 
-namespace ASBSubscriber.Worker
+namespace ASBSubscriber.Worker.Subscribers
 {
     public class ThreadManagingMessageSubscriber : MessageSubscriberBase
     {
@@ -39,6 +38,11 @@ namespace ASBSubscriber.Worker
             Task.WhenAll(receivers).Wait(token);
 
             Log.Info("Finished waiting for all receivers");
+        }
+
+        public override void StartSubscribingWithAsyncHandler(int maxConcurrency, CancellationToken cancellationToken)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

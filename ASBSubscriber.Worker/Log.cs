@@ -7,7 +7,7 @@ namespace ASBSubscriber.Worker
     {
         public static void Info(string message)
         {
-            Trace.TraceInformation($"Thread { Thread.CurrentThread.ManagedThreadId }: {message}");
+            Trace.TraceInformation($"Thread { Thread.CurrentThread.ManagedThreadId } : {message}");
         }
     }
 }
